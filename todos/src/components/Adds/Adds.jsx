@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {AiOutlinePlus} from 'react-icons/ai';
+import {HiPencil} from 'react-icons/hi';
 // 고유 id값 만들기
 import { v4 as uuidv4 } from 'uuid';
 
@@ -20,7 +20,7 @@ export default function Adds({onAdd}) {
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder='Add Todos ...' value={text} onChange={handleChange}/>
-            <button><AiOutlinePlus/></button>          
+            <button><HiPencil/></button>          
         </form>
     );
 }
