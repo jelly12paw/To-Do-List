@@ -10,11 +10,13 @@ export default function TodoList() {
     };
     // status값이 변경된 id의 값을 찾아 status값을 변경
     const handleUpdate = (updated) => setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
+    // todo값 삭제
+    const handleDelete = (deleted) => setTodos(todos.filter((t) => (t.id !== deleted.id)))
     return (
         <section>
             <ul>
                 {todos.map((item) => (
-                    <Todo key={item.id} todo={item} onUpdate={handleUpdate} />
+                    <Todo key={item.id} todo={item} onUpdate={handleUpdate} onDelete={handleDelete}/>
                 ))}
             </ul>
             <Adds onAdd={handleAdd}/>
