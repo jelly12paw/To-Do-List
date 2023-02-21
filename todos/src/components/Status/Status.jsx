@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Status({ filters, onFilterChange }) {
+export default function Status({ filters, filter, onFilterChange }) {
     return (
         <header>
             <ul>

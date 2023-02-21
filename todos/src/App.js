@@ -6,11 +6,11 @@ import TodoList from './components/TodoList/TodoList';
 const filters = ['all', 'act', 'done'];
 function App() {
   // filters의 초기값은 all
-  const [filters, setFilters] = useState(filters[0])
+  const [filter, setFilter] = useState(filters[0])
   return (
     <div>
-      <Status filters={filters} onFilterChange={setFilters} />
-      <TodoList />
+      <Status filters={filters} filter={filter} onFilterChange={setFilter} />
+      <TodoList filter={filter} />
     </div>
   );
 }
