@@ -13,7 +13,7 @@ export default function Adds({onAdd}) {
         // 텍스트의 좌우 여백 없애기
         if (text.trim().length === 0) {return ;}
         // Todo를 추가하면 uuid값, 내용, 상태값이 전달
-        onAdd({id: uuidv4(), text, status: 'active'})
+        onAdd({id: uuidv4(), text, status: 'act'})
         // input값이 submit되면 박스내용을 초기화
         setText('');
     }
