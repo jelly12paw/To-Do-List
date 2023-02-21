@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Adds from '../Adds/Adds';
 
 export default function TodoList() {
     const [todos, setTodos] = useState([
@@ -12,6 +13,7 @@ export default function TodoList() {
                     <li key={item.id}>{item.text}</li>
                 ))}
             </ul>
+            <Adds />
         </section>
     );
 }
