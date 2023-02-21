@@ -9,7 +9,7 @@ export default function TodoList() {
         setTodos([...todos, todo])
     };
     // status값이 변경된 id의 값을 찾아 status값을 변경
-    const handleUpdate = (updated) => setTodos(todos.map((t) => t.id === updated.id ? updated : t));
+    const handleUpdate = (updated) => setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
     return (
         <section>
             <ul>
