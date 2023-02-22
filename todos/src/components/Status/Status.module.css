@@ -1,0 +1,67 @@
+.header {
+    width: 25%;
+    margin-top: -14rem;
+}
+
+.today {
+    margin: 3rem 0;
+}
+
+.title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.45rem;
+    display: flex;
+}
+
+.title div {
+    padding-left: 0.5rem;
+    margin-top: -0.3rem;
+}
+
+.today p {
+    font-size: 1.1rem;
+    color: gray;
+    margin: 0.5rem 0 0 2rem;
+}
+
+.filters button {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    margin: 0.6rem 0 0.6rem 1.3rem;
+}
+
+.filters button:hover {
+    opacity: 0.6;
+}
+
+.filters li:nth-child(3) button {
+    margin-left: 0.7rem;
+}
+
+.filters li:nth-child(1) button {
+    margin-top: 1rem;
+}
+
+.filters button p {
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+
+.show {
+    font-size: 1.5rem;
+    color: var(--todo-bg);
+    border-radius: 100%;
+    padding: 0.5rem 0.5rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disappear {
+    display: none;
+}
