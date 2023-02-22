@@ -31,8 +31,8 @@ export default function Status({ filters, filter, onFilterChange }) {
                 </div>
                 <ul className={styles.filters}>
                     {filters.map((value, index) => 
-                    <li className={styles.filter} key={index}>
-                        <button className={value} onClick={() => onFilterChange(value)}>
+                    <li key={index}>
+                        <button className={`${value} ${filter === value && styles.selected}`} onClick={() => onFilterChange(value)}>
                             <div className={value === 'all' ? styles.show : styles.disappear}><BsListTask /></div>
                             <div className={value === 'act' ? styles.show : styles.disappear}><BiLoaderAlt /></div>
                             <div className={value === 'done' ? styles.show : styles.disappear}><BsCheck2All /></div>

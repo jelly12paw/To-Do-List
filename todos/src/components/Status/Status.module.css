@@ -33,10 +33,11 @@
     flex-direction: row-reverse;
     cursor: pointer;
     margin: 0.6rem 0 0.6rem 1.3rem;
+    opacity: 0.4;
 }
 
 .filters button:hover {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .filters li:nth-child(3) button {
@@ -64,4 +65,8 @@
 
 .disappear {
     display: none;
+}
+
+.filters .selected {
+    opacity: 1;
 }
