@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+// styles
 import styles from './Status.module.css';
+// icons
 import {HiOutlineSquare2Stack} from 'react-icons/hi2';
 import {BsCalendarCheck, BsListTask, BsCheck2All} from 'react-icons/bs';
 import {BiLoaderAlt} from 'react-icons/bi';
 
-export default function Status({ filters, filter, onFilterChange, iconStatus }) {
+export default function Status({ filters, filter, onFilterChange }) {
+    const [dateState, setDateState] = useState(new Date());
     return (
         <header className={styles.header}>
             <div className={styles.today}>
@@ -12,7 +15,14 @@ export default function Status({ filters, filter, onFilterChange, iconStatus }) 
                     <BsCalendarCheck/>
                     <div>today</div>
                 </div>
-                <p>FEB 22</p>
+                <p>
+                    {' '}
+                    {dateState.toLocaleDateString('en-US', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric',
+                    })}
+                </p>
             </div>
             <div className={styles.status}>
                 <div className={styles.title}>
