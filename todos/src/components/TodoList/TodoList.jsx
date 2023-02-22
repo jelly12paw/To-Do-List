@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Adds from '../Adds/Adds';
 import Todo from '../Todo/Todo';
+import styles from './TodoList.module.css'
 
 export default function TodoList({filter}) {
     const [todos, setTodos] = useState([]);
@@ -15,8 +16,8 @@ export default function TodoList({filter}) {
     // status값에 따라 해당 값만 보여주기
     const filtered = getFilteredItem(todos, filter);
     return (
-        <section>
-            <ul>
+        <section className={styles.container}>
+            <ul className={styles.items}>
                 {filtered.map((item) => (
                     <Todo key={item.id} todo={item} onUpdate={handleUpdate} onDelete={handleDelete}/>
                 ))}

@@ -7,7 +7,7 @@ import {BsCalendarCheck, BsListTask, BsCheck2All} from 'react-icons/bs';
 import {BiLoaderAlt} from 'react-icons/bi';
 
 export default function Status({ filters, filter, onFilterChange }) {
-    const [dateState, setDateState] = useState(new Date());
+    const [dateState] = useState(new Date());
     return (
         <header className={styles.header}>
             <div className={styles.today}>
