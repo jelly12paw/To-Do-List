@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {HiPencil} from 'react-icons/hi';
 // 고유 id값 만들기
 import { v4 as uuidv4 } from 'uuid';
+import styles from './Adds.module.css'
 
 export default function Adds({onAdd}) {
     // 기본값은 빈 문자열
@@ -18,10 +19,17 @@ export default function Adds({onAdd}) {
         setText('');
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder='Add Todos ...' value={text} onChange={handleChange}/>
-            <button><HiPencil/></button>          
+        <form className={styles.form} onSubmit={handleSubmit}>
+            <input className={styles.input} type="text" placeholder='Add Todos ...' value={text} onChange={handleChange}/>
+            <button className={styles.btn}><HiPencil/></button>          
         </form>
     );
 }
 
+// const clearInput = () => {
+//     const input = document.querySelector(".input")[0];
+//     input.value = "";
+// }
+  
+// const clearBtn = document.getElementById("clear-btn");
+// clearBtn.addEventListener("click", clearInput);
