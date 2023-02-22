@@ -1,16 +1,16 @@
 .form {
     position: relative;
-    top: 90%;
+    top: 3rem;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 1s;
     width: 3.5rem;
-    height: 3.5rem;
+    height: 4.2rem;
     background-color: var(--todo-bg);
     box-sizing: border-box;
     border-radius: 1.8rem;
     border: 0.2rem solid var(--text);
-    padding: 0.5rem;
+    /* padding: 1.4rem 1rem; */
     cursor: pointer;
 }
 
@@ -31,6 +31,7 @@
 
 .btn {
     cursor: pointer;
+    background-color: var(--todo-bg);
 }
 
 .btn svg {
@@ -50,10 +51,6 @@
 }
 
 .form:hover .input {
-    display: block;
-}
-
-.form:valid {
     display: block;
 }
 

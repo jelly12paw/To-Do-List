@@ -37,8 +37,8 @@ body {
 }
 
 #root {
-  width: 70%;
-  height: 75%;
+  width: 72%;
+  height: 77%;
   background-color: var(--todo-bg);
   overflow: hidden;
   border-radius: 1rem;

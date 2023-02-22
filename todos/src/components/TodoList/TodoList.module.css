@@ -1,10 +1,16 @@
 .container {
     width: 70%;
-    height: 90%;
+    height: 32rem;
     background-color: var(--bg);
     border-radius: 1rem;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    flex: 1 1 auto;
     overflow-y: auto;
-    position: relative;
 }
 
 ::-webkit-scrollbar {
