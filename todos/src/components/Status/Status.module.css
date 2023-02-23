@@ -111,4 +111,8 @@
     .toggle {
         margin-top: 0.3rem;
     }
+
+    .darkmode .title, .status .title {
+        display: none;
+    }
 }
