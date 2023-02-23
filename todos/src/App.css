@@ -28,3 +28,11 @@
     color: var(--todo-bg);
     background-color: var(--done);
 }
+
+/* 태블릿 사이즈 */
+@media all and (max-width: 1024px){
+    .done .Status_show__GKQZH{
+      margin-left: -0.5rem;
+    }
+    
+}

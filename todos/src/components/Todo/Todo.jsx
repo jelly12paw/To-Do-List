@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {FaTrashAlt} from 'react-icons/fa';
-import {AiOutlineClockCircle, AiOutlineCheck} from 'react-icons/ai';
+import {AiOutlineClockCircle} from 'react-icons/ai';
 import styles from './Todo.module.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -19,8 +19,6 @@ export default function Todo({todo, onUpdate, onDelete}) {
     return (
         <li className={styles.todo}>
             <input className={styles.checkbox} type="checkbox" id={id} checked={status === 'done'} onChange={handleChange} />
-            {/* <div className={styles.checkicon}><AiOutlineCheck/></div> */}
-            {/* <span className={styles.checkmark}></span> */}
             <div>
                 <label className={styles.text} htmlFor={id}>{text}</label>
                 <div className={styles.clock}>

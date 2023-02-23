@@ -82,3 +82,33 @@
     color: var(--text);
     cursor: pointer;
 }
+
+/* 태블릿 사이즈 */
+@media all and (max-width: 1024px){
+    .header {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      top: -1rem;
+      position: relative;
+    }
+
+    .filters {
+        display: flex;
+        align-items: flex-end;
+        margin-top: -0.7rem;
+    }
+
+    .filters li button {
+        margin: 0 0.2rem;
+    }
+
+    .filters li button p {
+        display: none;
+    }
+
+    .toggle {
+        margin-top: 0.3rem;
+    }
+}

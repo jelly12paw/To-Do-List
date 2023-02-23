@@ -13,7 +13,6 @@
 }
 
 .checkbox {
-    /* position: absolute; */
     width: 2.5rem;
     height: 2.5rem;
     margin-left: -2.9rem;
@@ -38,35 +37,6 @@
 .checkbox:checked ~ div .text {
     color: var(--done);
 }
-
-/* .checkmark {
-    position: absolute;
-    margin-left: -2.4rem;
-    height: 0.4rem;
-    width: 0.4rem;
-} */
-
-/* .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-} */
-  
-/* .checkbox:checked ~ .checkmark:after {
-    display: block;
-} */
-  
-/* .checkmark:after {
-    left: 50%;
-    top: -9px;
-    width: 7px;
-    height: 15px;
-    border: solid var(--todo-bg);
-    border-width: 0 5px 5px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-} */
 
 .text {
     color: var(--text);

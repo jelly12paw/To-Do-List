@@ -3,7 +3,7 @@
     height: 32rem;
     background-color: var(--bg);
     border-radius: 1rem;
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -57,4 +57,15 @@
 
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+/* 태블릿 사이즈 */
+@media all and (max-width: 1024px){
+  .container {
+    width: 95%;
+    height: 30rem;
+    position: relative;
+    top: -2rem;
+  }
+  
 }

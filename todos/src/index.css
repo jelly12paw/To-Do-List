@@ -81,3 +81,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 태블릿 사이즈 */
+@media all and (max-width: 1024px){
+  #root {
+    flex-direction: column;
+    height: 85%;
+  }
+  
+}
