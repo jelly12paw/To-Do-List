@@ -5,9 +5,13 @@ import styles from './Status.module.css';
 import {HiOutlineSquare2Stack} from 'react-icons/hi2';
 import {BsCalendarCheck, BsListTask, BsCheck2All} from 'react-icons/bs';
 import {BiLoaderAlt} from 'react-icons/bi';
+import {HiMoon, HiSun} from 'react-icons/hi';
+import {FaToggleOn} from 'react-icons/fa';
+import { useDarkmode } from '../../context/DarkmodeContext';
 
 export default function Status({ filters, filter, onFilterChange }) {
     const [dateState] = useState(new Date());
+    const {darkmode, toggleDarkmode} = useDarkmode();
     return (
         <header className={styles.header}>
             <div className={styles.today}>
@@ -40,6 +44,15 @@ export default function Status({ filters, filter, onFilterChange }) {
                         </button>
                     </li>)}
                 </ul>
+            </div>
+            <div className={styles.darkmode}>
+                <div className={styles.title}>
+                    <FaToggleOn/>
+                    <div>mode</div>
+                </div>
+                <button className={styles.toggle} onClick={toggleDarkmode}>
+                        {!darkmode && <HiMoon/>}{darkmode && <HiSun/>}
+                </button>
             </div>
         </header>
     );

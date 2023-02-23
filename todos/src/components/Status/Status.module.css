@@ -1,6 +1,6 @@
 .header {
     width: 25%;
-    margin-top: -14rem;
+    margin-top: -1rem;
 }
 
 .today {
@@ -69,4 +69,16 @@
 
 .filters .selected {
     opacity: 1;
+}
+
+.darkmode {
+    margin: 3rem 0;
+}
+
+.toggle {
+    background: transparent;
+    font-size: 2rem;
+    margin: 1rem 0 0 1.2rem;
+    color: var(--text);
+    cursor: pointer;
 }

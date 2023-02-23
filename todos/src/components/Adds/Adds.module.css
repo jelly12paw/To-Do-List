@@ -3,7 +3,7 @@
     top: 3rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all 1s;
+    transition: all 0.5s;
     width: 3.5rem;
     height: 3.5rem;
     background-color: var(--todo-bg);
@@ -27,6 +27,7 @@
     padding: 0 1rem;
     color: var(--text);
     flex: 1 0 auto;
+    background-color: var(--todo-bg);
 }
 
 .btn {

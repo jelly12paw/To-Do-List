@@ -14,6 +14,15 @@
   --gray: gray;
 }
 
+html.dark {
+  --text: white;
+  --done: #fec9cb;
+  --act: #ffe048;
+  --bg: #5ec1d1;
+  --todo-bg: #5e5452;
+  --gray: rgb(176, 176, 176);
+}
+
 * {
   font-family: 'S-CoreDream-3Light';
 }
@@ -45,6 +54,9 @@ body {
   border-radius: 1rem;
   color: var(--text);
   border: 1px solid var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #root > div {
