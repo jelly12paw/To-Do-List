@@ -1,16 +1,118 @@
 .todo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 2.5rem;
+    background-color: var(--todo-bg);
+    padding: 1.5rem 1.5rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
 .checkbox {
-
+    /* position: absolute; */
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: -2.9rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--act);
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--todo-bg);
 }
+
+.checkbox:hover {
+    filter: brightness(125%);
+}
+
+.checkbox:checked {
+    background-color: var(--done);
+    border: 1px solid var(--todo-bg);
+}
+
+.checkbox:checked ~ div .text {
+    color: var(--done);
+}
+
+/* .checkmark {
+    position: absolute;
+    margin-left: -2.4rem;
+    height: 0.4rem;
+    width: 0.4rem;
+} */
+
+/* .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+} */
+  
+/* .checkbox:checked ~ .checkmark:after {
+    display: block;
+} */
+  
+/* .checkmark:after {
+    left: 50%;
+    top: -9px;
+    width: 7px;
+    height: 15px;
+    border: solid var(--todo-bg);
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
 
 .text {
-
+    color: var(--text);
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
-.icon {
+.clock {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--gray);
+    margin: 0.2rem 0 0.1rem 0;
+}
 
+.clock .title {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.datepicker {
+    border-style: none;
+    cursor: pointer;
+    color: var(--text);
+    background-color: transparent;
+    margin-left: 0.5rem;
+}
+
+.datepicker:hover {
+    font-weight: bold;
+}
+
+.icon button {
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.todo:hover .icon button {
+    visibility: visible;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.icon button svg {
+    font-size: 1.4rem;
+}
+
+.icon button:hover {
+    transform: rotate(-15deg) scale(1.1);
 }

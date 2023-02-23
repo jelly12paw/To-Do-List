@@ -11,6 +11,7 @@
   --act: #eecb27;
   --bg: #bedae5;
   --todo-bg: rgb(255, 255, 255);
+  --gray: gray;
 }
 
 * {
@@ -37,7 +38,7 @@ body {
 }
 
 #root {
-  width: 72%;
+  width: 68%;
   height: 77%;
   background-color: var(--todo-bg);
   overflow: hidden;

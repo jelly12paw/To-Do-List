@@ -5,12 +5,12 @@
     transform: translate(-50%, -50%);
     transition: all 1s;
     width: 3.5rem;
-    height: 4.2rem;
+    height: 3.5rem;
     background-color: var(--todo-bg);
     box-sizing: border-box;
     border-radius: 1.8rem;
     border: 0.2rem solid var(--text);
-    /* padding: 1.4rem 1rem; */
+    padding: 1.4rem 1rem;
     cursor: pointer;
 }
 
