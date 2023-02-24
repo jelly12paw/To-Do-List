@@ -86,12 +86,12 @@ code {
   color: var(--bg);
 }
 
-.all .Status_show__GKQZH {
+.all .Status_show__iMEOl {
   color: var(--todo-bg);
   background-color: var(--bg);
 }
 
-.all .Status_selected__pkxUh {
+.all .Status_selected__u5jB0 {
   opacity: 1;
 }
 
@@ -99,7 +99,7 @@ code {
   color: var(--act);
 }
 
-.act .Status_show__GKQZH {
+.act .Status_show__iMEOl {
   color: var(--todo-bg);
   background-color: var(--act);
 }
@@ -108,7 +108,7 @@ code {
   color: var(--done);
 }
 
-.done .Status_show__GKQZH {
+.done .Status_show__iMEOl {
   color: var(--todo-bg);
   background-color: var(--done);
 }
@@ -120,7 +120,7 @@ code {
     height: 85%;
   }
   
-  .done .Status_show__GKQZH{
+  .done .Status_show__iMEOl{
     margin-left: -0.5rem;
   }
 }
