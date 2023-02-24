@@ -82,6 +82,37 @@ code {
     monospace;
 }
 
+.all {
+  color: var(--bg);
+}
+
+.all .Status_show__GKQZH {
+  color: var(--todo-bg);
+  background-color: var(--bg);
+}
+
+.all .Status_selected__pkxUh {
+  opacity: 1;
+}
+
+.act {
+  color: var(--act);
+}
+
+.act .Status_show__GKQZH {
+  color: var(--todo-bg);
+  background-color: var(--act);
+}
+
+.done {
+  color: var(--done);
+}
+
+.done .Status_show__GKQZH {
+  color: var(--todo-bg);
+  background-color: var(--done);
+}
+
 /* 태블릿 사이즈 */
 @media all and (max-width: 1024px){
   #root {
@@ -89,4 +120,7 @@ code {
     height: 85%;
   }
   
+  .done .Status_show__GKQZH{
+    margin-left: -0.5rem;
+  }
 }
